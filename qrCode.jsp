@@ -17,7 +17,7 @@
     	if(no == 1)	moveUrl = myForm.moveUrl.value;
     	else moveUrl = myForm.email.value;
     	$.ajax({
-  			url  : "${ctp}/study/qrCreate",
+  			url  : "${ctp}/qrcode/qrCreate",
   			type : "post",
   			data : {moveUrl : moveUrl},
   			success : function(data) {
